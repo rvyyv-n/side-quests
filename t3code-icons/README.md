@@ -16,6 +16,8 @@ i'm running `pixel`.
 | <img src="icons/noir.png" width="40"> | `noir` | pure pitch-black oled tile, stark white t3. |
 | <img src="icons/braun.png" width="40"> | `braun` | dieter rams warm grey casing, anthracite t3, orange tactile dot. |
 | <img src="icons/nord.png" width="40"> | `nord` | arctic slate tile, polar white t, glacial frost cyan 3. |
+| <img src="icons/light.png" width="40"> | `light` | plain white tile, black t3, faint edge so it holds on the light windows 11 taskbar. |
+| <img src="icons/dark.png" width="40"> | `dark` | plain black tile, white t3, faint light edge so it holds on the dark windows 11 taskbar. |
 
 ## stylised set
 

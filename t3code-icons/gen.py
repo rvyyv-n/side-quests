@@ -191,6 +191,31 @@ variants["nord"] = f"""
 </g>
 """
 
+# light / dark: flat pair tuned for the windows 11 taskbar (light ~#eeeeee, dark ~#202020).
+# the tile sits a step brighter or darker than the bar, and the edge is ~1px at 24-32px so it
+# still separates from the bar where the tile colour alone wouldn't. no shadows: they smear when small.
+def edge(colour, opacity):
+    return (f'<rect x="24" y="24" width="976" height="976" rx="236" fill="none" '
+            f'stroke="{colour}" stroke-opacity="{opacity}" stroke-width="56"/>')
+
+variants["light"] = f"""
+<defs>{DEFS}</defs>
+<g clip-path="url(#sq)">
+  <rect width="{S}" height="{S}" fill="#ffffff"/>
+  {glyph("#1b1b1f")}
+  {edge("#000", .11)}
+</g>
+"""
+
+variants["dark"] = f"""
+<defs>{DEFS}</defs>
+<g clip-path="url(#sq)">
+  <rect width="{S}" height="{S}" fill="#0b0b0d"/>
+  {glyph("#f4f4f5")}
+  {edge("#fff", .18)}
+</g>
+"""
+
 
 # --- stylised set (arc-style alternate icons) -------------------------------
 # built lazily: some need extra assets (displacement maps, a rasterised glyph mask).
